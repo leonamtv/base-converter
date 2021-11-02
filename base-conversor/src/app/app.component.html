@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#261b2e" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Converter</title>
+</head>
+<body>
+  <div>
+    <h2>Base Converter</h2>
+    <label>Decimal</label>
+    <input type="text" (keypress)="base10Only($event)" [(ngModel)]="base10" (input)="fromBase10()">
+    <label>Binary</label>
+    <input type="text" (keypress)="base2Only($event)" [(ngModel)]="base2" (input)="fromBase2()">
+    <label>Octal</label>
+    <input type="text" (keypress)="base8Only($event)" [(ngModel)]="base8" (input)="fromBase8()">
+    <label>Hexadecimal</label>
+    <input type="text" (keypress)="base16Only($event)" [(ngModel)]="base16" (input)="fromBase16()">
+  </div>
+</body>
+<footer>
+  <a href="https://leonamtv.github.io/leonamtv/" target="_blank"><img src="assets/assinatura.png"></a>
+</footer>
+</html>

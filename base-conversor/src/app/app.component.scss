@@ -1,0 +1,55 @@
+$color1: rgb(255, 136, 0);
+$color2: rgb(94, 94, 255);
+$color3: rgba($color2, 0.5);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    div {
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        h2 {
+            margin-bottom: 15px;        
+            font-size: 35px;       
+            color: $color1;
+        }
+        label {
+            text-align: left;
+            margin-top: 5px;        
+            margin-bottom: 3px;    
+            font-size: 18px;    
+            font-style: italic;
+            font-weight: bold;
+            color: $color3;
+        }
+        input {
+            width: 250px;
+            margin-bottom: 15px; 
+            font-size: 25px;     
+            padding: 5px 8px;
+            border-radius: 10px;  
+            font-weight: bold;
+            color: $color2;
+            border: $color1 solid 3px;
+            outline: none;
+        }
+    }
+}
+footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+
+    img {
+        width: 200px;
+    }
+}
